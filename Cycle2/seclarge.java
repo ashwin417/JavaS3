@@ -1,5 +1,5 @@
 import java.util.*;
-class smallar
+class seclarge
 {
 	public static void main(String[] args)
 	{
