@@ -52,5 +52,7 @@ class matmult
 			System.out.println();
 		}
 		}
+		else
+			System.out.println("Multiplication not possible");
 	}
 }
