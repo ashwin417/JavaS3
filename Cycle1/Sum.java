@@ -2,7 +2,10 @@ class Sum
 {
 	public static void main(String[] args)
 	{
-		int a=4,b=10;
+		Scanner sc = new Scanner(System.in);
+		int a,b;
+		a = sc.nextInt();
+		b = sc.nextInt();
 		System.out.println("Sum = "+ (a+b));
 	}
 }
