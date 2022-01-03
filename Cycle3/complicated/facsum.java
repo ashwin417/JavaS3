@@ -1,3 +1,5 @@
+// Little complicated program of factorial and sum
+
 import java.util.*;
 class facsum
 {
