@@ -9,14 +9,18 @@ class strrep1
 		int i;
 		char s = sc.next().charAt(0);
 		char t = sc.next().charAt(0);
+		char[] ch =a.toCharArray();
 		for(i=0; i<len ;i++)
 		{
-			if(a.charAt(i)==s)
+
+			if(ch[i]==s)
 			{
-				a.charAt(i)=t;
+				ch[i]=t;
 				
 			}
 		}
+		a = String.valueOf(ch);
+
 		System.out.println(a);
 	}
 }
