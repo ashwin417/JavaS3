@@ -23,7 +23,8 @@ class catnumstr
 	{
 		String p = Integer.toString(a);
 		String q = Integer.toString(b);
-		System.out.println("The concatenated number is "+ p+q);   
+		int d = Integer.parseInt(p+q);
+		System.out.println("The concatenated number is "+ d);   
 	}
 	
 	void constrnum(String str1 , String str2)
