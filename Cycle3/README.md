@@ -5,6 +5,7 @@
             
 [factorialsum.java](https://github.com/ashwin417/JavaS3/blob/main/Cycle3/factorialsum.java) - Program with functions included within the main() class to find factorial
                     and sum of digits of the number.
+![](https://github.com/ashwin417/JavaS3/blob/main/Output/Cycle3/factorialsum.png)
                     
 [freqrev.java](https://github.com/ashwin417/JavaS3/blob/main/Cycle3/freqrev.java) - Create a class with functions to find the frequency of a given character
                in a string and to reverse a given string. The functions should be invoked
