@@ -11,8 +11,8 @@ class Perimeter
 		int b = sc.nextInt();
 		System.out.print("Enter the radius of circle : ");
 		int r = sc.nextInt();
-		Perimeter ab = new Perimeter(r);
-		ab = new Perimeter(l,b);
+		Perimeter ab = new Perimeter(l,b);
+		ab = new Perimeter(r);
 	}
 	Perimeter(int r)
 	{
