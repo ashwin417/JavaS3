@@ -16,11 +16,11 @@ class Perimeter
 	}
 	Perimeter(int r)
 	{
-		System.out.println("Perimeter of the circle = "+ (float)(2*3.14*r));
+		System.out.println("Perimeter of the circle = "+ (float)(2*3.14*r)+" sq.cm");
 	}
 	Perimeter(int l, int b)
 	{
-		System.out.println("Perimeter of the Rectangle = "+ (2*(l+b)));
+		System.out.println("Perimeter of the Rectangle = "+ (2*(l+b))+" sq.cm");
 	}
 
 	
