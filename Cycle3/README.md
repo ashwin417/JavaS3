@@ -1,6 +1,6 @@
 ### List 
 
-stud.java - Program to create a student class with name, roll no and marks of five
+[stud.java](https://github.com/ashwin417/JavaS3/blob/main/Cycle3/stud.java) - Program to create a student class with name, roll no and marks of five
             subjects. Write functions to read and display the details.
             
 factorialsum.java - Program with functions included within the main() class to find factorial
