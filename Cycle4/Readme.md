@@ -15,8 +15,9 @@ sides in the given geometrical structures.
 Employee class. Employee class to have two methods display() and calcSalary().
 Write a program to display the engineer salary and to display from Employee class
 using a single object instantiation (i.e., only one object creation is allowed).
-a. display() only prints the name of the class and does not return any value. Ex. “
-Name of class is Employee.”
+
+a. display() only prints the name of the class and does not return any value. Ex. “Name of class is Employee.”
+
 b. calcSalary() in Employee displays “Salary of employee is 10000” and
 calcSalary() in Engineer displays “Salary of employee is 20000.”
 
