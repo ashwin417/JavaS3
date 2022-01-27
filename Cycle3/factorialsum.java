@@ -3,7 +3,7 @@
 import java.util.*;
 class factorialsum
 {
-	static int a,b;
+	static int a;
 	public static void main(String[] args)
 	{
 		factorialsum f = new factorialsum();
