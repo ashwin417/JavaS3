@@ -44,12 +44,5 @@ class factorialsum
 		}
 		System.out.println("Sum of digit of number entered is " +sum);
 	}
-}
 
-		{
-			sum = sum + (b%10);
-			b=b/10;
-		}
-		System.out.println("Sum of digit of number entered is " +sum);
-	}
 }
