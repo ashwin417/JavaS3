@@ -20,7 +20,7 @@ public static void main(String[] args)
         System.out.print("Enter the name of employee ");
         e[i].name = sc.next();
         System.out.print("Enter the Phone Number of employee ");
-        e[i].phno = sc.nextInt();
+        e[i].phno = sc.next();
     }
     for(int j=0;j<n;j++)
     {
