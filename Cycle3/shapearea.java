@@ -30,10 +30,16 @@ class shapearea
 	}
 	void Area(int x, int y, int z)
 	{
+		if(((x+y)>z)&&((y+z)>x)&&((x+z)>y))
+		{
 		float s = (x+y+z)/2;
 		float a = (float)Math.sqrt(s*(s-x)*(s-y)*(s-z));
 		System.out.println("Area of the Triangle = "+ a);
-	}
+		}
+		else
+			System.out.println("Wrong Figures Entered for Triangle");
+			
+		}
 	
 	
 	
