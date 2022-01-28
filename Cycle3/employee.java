@@ -1,7 +1,8 @@
 import java.util.*;
 class employe
 {
-int empno, phno;
+int empno;
+long phno;
 String name;
 }
 class employee
@@ -20,7 +21,7 @@ public static void main(String[] args)
         System.out.print("Enter the name of employee ");
         e[i].name = sc.next();
         System.out.print("Enter the Phone Number of employee ");
-        e[i].phno = sc.next();
+        e[i].phno = sc.nextLong();
     }
     for(int j=0;j<n;j++)
     {
