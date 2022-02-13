@@ -1,0 +1,112 @@
+import java.util.*;
+
+class Square extends Thread
+
+{
+	
+	int n;
+	
+	Square(int n)
+	
+	{
+		
+		this.n = n;
+		
+	}
+	
+	public void run()
+	
+	{
+		
+		int s = this.n * this.n;
+		
+		System.out.println("Square of " + this.n + " = " + s );
+		
+	}
+	
+}
+
+class Cube extends Thread
+
+{
+	
+	int n;
+	
+	Cube(int n)
+	
+	{
+		this.n = n;
+	}
+	
+	public void run()
+	
+	{
+		
+		int c = this.n * this.n * this.n;
+		
+		System.out.println("Cube of " + this.n + " = " + c );
+		
+	}
+	
+}
+
+class Number extends Thread
+
+{
+	
+	public void run()
+	
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("How Many Random Integers needed : ");
+		int x = sc.nextInt();
+		Random random = new Random();
+		
+		for(int i =0; i<x; i++)
+			
+		{
+			
+			int ranInt = random.nextInt(100);
+			
+			System.out.println("the random integer: " + ranInt);
+			
+			Square s = new Square(ranInt);
+			
+			s.start();
+			
+			Cube c = new Cube(ranInt);
+			
+			c.start();
+			
+			try {
+				
+				Thread.sleep(1000);
+				
+			} catch (InterruptedException e) {
+				
+				System.out.println(e);
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+public class experiment1 {
+	
+	public static void main(String args[]) throws Exception
+	
+	{
+		
+		Number n = new Number();
+		
+		n.start();
+		
+	}
+	
+}
+
+
+
