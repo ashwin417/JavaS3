@@ -61,31 +61,35 @@ class Number extends Thread
 		System.out.print("How Many Random Integers needed : ");
 		int x = sc.nextInt();
 		Random random = new Random();
+		System.out.print("Set the limit upto which random numbers should be generated : ");
+		int l = sc.nextInt();
 		
 		for(int i =0; i<x; i++)
 			
 		{
 			
-			int ranInt = random.nextInt(100);
+			int ranInt = random.nextInt(l);
 			
-			System.out.println("the random integer: " + ranInt);
+			System.out.println("The random integer: " + ranInt);
 			
-			Square s = new Square(ranInt);
+			if(ranInt%2==0)
+				{
+				Square s = new Square(ranInt);
+				s.start();
+				}
+			else
+				{
+				Cube c = new Cube(ranInt);
+				c.start();
+				}
 			
-			s.start();
-			
-			Cube c = new Cube(ranInt);
-			
-			c.start();
-			
-			try {
-				
+			try 
+			{
 				Thread.sleep(1000);
-				
-			} catch (InterruptedException e) {
-				
+			} 
+			catch (InterruptedException e) 
+			{
 				System.out.println(e);
-				
 			}
 			
 		}
