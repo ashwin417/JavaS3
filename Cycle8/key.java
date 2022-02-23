@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;  
-public class keypress extends Frame implements KeyListener{  
+public class keypress extends KeyAdapter{  
 	static JLabel l; 
 	public void keyPressed(KeyEvent e) {  
 		l.setText("User pressed a key");  
