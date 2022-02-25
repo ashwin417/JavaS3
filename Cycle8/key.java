@@ -13,7 +13,7 @@ public class keypress extends KeyAdapter{
 		l.setText("Typing");  
 	}  
 	public static void main(String[] args) {  
-		JFrame f = new JFrame("Mouse");
+		JFrame f = new JFrame("Key");
 		f.setSize(300,300);  
 		keypress k = new keypress();
 		f.addKeyListener(k);
