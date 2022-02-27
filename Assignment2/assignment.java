@@ -24,7 +24,7 @@ public class Main extends JFrame implements ActionListener
 
     void makingfield()
     {
-        Main s = new Main();
+        
         JFrame frame = new JFrame("Student Details");
         setLayout(new BorderLayout());
         JPanel p = new JPanel();
