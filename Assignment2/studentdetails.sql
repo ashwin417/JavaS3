@@ -10,4 +10,3 @@ insert into studentdetails values(8,"Karthik",17,"Dubai");
 insert into studentdetails values(9,"Chris",16,"Hyderabad");
 insert into studentdetails values(10,"Ava",15,"Pune");
 select * from studentdetails;
-delete from studentdetails where No = 10;
