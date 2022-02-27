@@ -16,11 +16,7 @@ public class Main extends JFrame implements ActionListener
     JTextField troll = new JTextField();
     JButton but;
 
-    Main()
-    {
-
-
-    }
+ 
 
     void makingfield()
     {
