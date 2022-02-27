@@ -1,0 +1,13 @@
+create table studentdetails(No numeric,Name varchar(20), Age numeric, Address varchar(255));
+insert into studentdetails values(1,"Ram",15,"Chengannur");
+insert into studentdetails values(2,"Anand",14,"Bengaluru");
+insert into studentdetails values(3,"Evy",16,"Tiruvalla");
+insert into studentdetails values(4,"Tim",16,"Kochi");
+insert into studentdetails values(5,"Bob",16,"Kasargod");
+insert into studentdetails values(6,"Govind",15,"Chengannur");
+insert into studentdetails values(7,"Rahul",16,"Bengaluru");
+insert into studentdetails values(8,"Karthik",17,"Dubai");
+insert into studentdetails values(9,"Chris",16,"Hyderabad");
+insert into studentdetails values(10,"Ava",15,"Pune");
+select * from studentdetails;
+delete from studentdetails where No = 10;
