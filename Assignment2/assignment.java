@@ -43,13 +43,13 @@ public class Main extends JFrame implements ActionListener
 
         but.addActionListener(this);
 
-        JLabel ln = new JLabel("  Name");
+        JLabel ln = new JLabel("  Name : ");
         tname.setBounds(100, 150, 270, 40);
         tname.setFont(new Font("Arial", Font.BOLD, 20));
         tname.setEditable(false);
         frame.add(tname);
 
-        JLabel la = new JLabel("  Age");
+        JLabel la = new JLabel("  Age : ");
         tage.setBounds(100, 270, 270, 40);
         tage.setFont(new Font("Arial", Font.BOLD, 20));
         tage.setEditable(false);
