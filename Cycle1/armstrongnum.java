@@ -1,17 +1,24 @@
 import java.util.*;
+import java.lang.*;
 class armstrongnum
 {
     public static void main(String[] args)
     {
         int n,rem,sum=0;
-        System.out.print("Enter a 3-digit number: ");
+        System.out.print("Enter a number: ");
         Scanner sc=new Scanner(System.in);
         n= sc.nextInt();
-        int temp = n;
+        int temp = n,digit=0;
+        while(n>0)
+        {
+            n = n/10;
+            digit++;
+        }
+        n = temp;
         while(n>0)
         {
             rem=n%10;
-            sum= sum+ (rem*rem*rem);
+            sum+=Math.pow(rem,digit);
             n=n/10;
         }
         if(sum==temp)
