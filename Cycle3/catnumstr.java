@@ -16,10 +16,10 @@ class catnumstr
 		int a = sc.nextInt();
 		System.out.println("The second number is");
 		int b = sc.nextInt();
-		ca.constrnum(str1,str2);
-		ca.constrnum(a,b);
+		ca.concatfn(str1,str2);
+		ca.concatfn(a,b);
 	}
-	void constrnum(int a, int b)
+	void concatfn(int a, int b)
 	{
 		String p = Integer.toString(a);
 		String q = Integer.toString(b);
@@ -27,7 +27,7 @@ class catnumstr
 		System.out.println("The concatenated number is "+ d);   
 	}
 	
-	void constrnum(String str1 , String str2)
+	void concatfn(String str1 , String str2)
 	{
 		String str3 = str1.concat(str2);
 		System.out.println("The concatenated string is "+ str3);
