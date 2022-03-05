@@ -1,61 +1,70 @@
 import java.util.*;
-class qsort
-{
-	
-public static void main(String[] args)
-{
-	qsort q = new qsort();
-	Scanner sc = new Scanner(System.in);
-	System.out.print("Enter the number of element in the array : ");
-	int n = sc.nextInt();
-	int[] a = new int[n];
-	System.out.print("Enter the array elements : ");
-	for(int i=0;i<n;i++)
-		a[i]=sc.nextInt();
-	q.qsort(a,0,n-1);
-	q.print(a,n);
-}
+public class StringQuickSort {
 
-void qsort(int a[], int l, int r )
-{ 
-	int x;
-	if(l<r)
-	{
-		x = partition(a,l,r);
-		qsort(a,l,x-1);
-		qsort(a,x+1,r);
-	}
-}
+    String names[];
+    int length;
 
-int partition(int a[],int l, int r)
-{
-	int key = a[l];
-	int i=l+1,j=r;
-	while(i<j)
-	{
-		while(a[i]<=key && i<r)
-			i++;
-		while(a[j]>key && j>l)
-			j--;
-		if(i<j)
-			{
-			int temp = a[i];
-			a[i]=a[j];
-			a[j]=temp;
-			}
-	}
-	int temp = a[l];
-	a[l]=a[j];
-	a[j]=temp;
-	return j;
-}
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        StringQuickSort obj = new StringQuickSort();
+        System.out.println("Enter the size:");
+        int n=sc.nextInt();
+        
+        String stringsList[] = new String[n];
+        System.out.println("Enter the names:");
+        for(int i=0;i<n;i++)
+        {
+         stringsList[i]=sc.next();
+        }
+        obj.sort(stringsList);
+        System.out.println();
+        System.out.println("Names in sorted order:");
+        for (String i : stringsList) {
+            System.out.print(i);
+            System.out.print(" ");
+        }
+    }
 
+    void sort(String array[]) {
+        if (array == null || array.length == 0) {
+            return;
+        }
+        this.names = array;
+        this.length = array.length;
+        quickSort(0, length - 1);
+    }
 
-void print(int a[], int n)
-{
-	System.out.print("The Sorted Array is ");
-	for(int i=0;i<n;i++)
-		System.out.format("%d ",a[i]);
-	System.out.println();
-}
+    void quickSort(int lowerIndex, int higherIndex) {
+        int i = lowerIndex;
+        int j = higherIndex;
+        String pivot = this.names[lowerIndex + (higherIndex - lowerIndex) / 2];
+
+        while (i <= j) {
+            while (this.names[i].compareToIgnoreCase(pivot) < 0) {
+                i++;
+            }
+
+            while (this.names[j].compareToIgnoreCase(pivot) > 0) {
+                j--;
+            }
+
+            if (i <= j) {
+                exchangeNames(i, j);
+                i++;
+                j--;
+            }
+        }
+        if (lowerIndex < j) {
+            quickSort(lowerIndex, j);
+        }
+        if (i < higherIndex) {
+            quickSort(i, higherIndex);
+        }
+    }
+
+    void exchangeNames(int i, int j) {
+        String temp = this.names[i];
+        this.names[i] = this.names[j];
+        this.names[j] = temp;
+    }
 }
