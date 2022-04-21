@@ -8,12 +8,14 @@ class experiment4
 	{
     FileInputStream fin = new FileInputStream("int1.txt");
     int ch;
-	String a;int sum=0;
+	String a;int sum=0;String s="";
 	System.out.println("The Numbers in the file are : ");
 	while( (ch = fin.read())!=-1 )  
-    {
-		String s=Character.toString((char)ch);
-		StringTokenizer st = new StringTokenizer(s);
+	    {
+		 s=s+Character.toString((char)ch);
+		
+		}
+	StringTokenizer st = new StringTokenizer(s);
 		while( st.hasMoreTokens()) 
 		{
 			a = st.nextToken();
@@ -21,8 +23,6 @@ class experiment4
 			System.out.println(b);
 			sum = sum + b; 
 		}
-	}
-	
 	System.out.println("The sum is " + sum);
 	}
 	catch(Exception e) {System.out.print(e);}
