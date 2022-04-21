@@ -4,8 +4,8 @@ class experiment2
 	public static void main(String[] args )
 	{
 		try{
-			int b = 100;
-			if(b<500)
+			int balance = 100;
+			if(balance<500)
 				throw new balanceException();
 		
 		}
