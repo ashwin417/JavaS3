@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;  
-public class keypress extends KeyAdapter{  
+public class keyEve extends KeyAdapter{  
 	static JLabel l; 
 	public void keyPressed(KeyEvent e) {  
 		l.setText("User pressed a key");  
@@ -15,7 +15,7 @@ public class keypress extends KeyAdapter{
 	public static void main(String[] args) {  
 		JFrame f = new JFrame("Key");
 		f.setSize(300,300);  
-		keypress k = new keypress();
+		keyEve k = new keyEve();
 		f.addKeyListener(k);
 		JPanel p = new JPanel();
 		l = new JLabel();
