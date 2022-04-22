@@ -7,24 +7,11 @@ class factorialsum
 	public static void main(String[] args)
 	{
 		factorialsum f = new factorialsum();
-
-	Scanner sc = new Scanner(System.in);
-		System.out.print("1.Fatorial \t 2.Sum of Digits of a Number \nEnter the option :  ");
-		int n = sc.nextInt();
-		switch(n)
-		{
-            case 1 : { System.out.print("Enter the number whose factorial has to be found : ");
-            a = sc.nextInt();
-            f.factorial();
-            break;
-            }
-            case 2 : {
-            System.out.print("Enter the number whose Sum of digits has to be found : ");
-            a= sc.nextInt();
-            f.sumdig();
-            break;
-            }
-        }
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the number : ");
+		a = sc.nextInt();
+		f.factorial();
+		f.sumdig();
 
 	}
 	void factorial()
